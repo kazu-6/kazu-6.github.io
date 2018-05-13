@@ -1,15 +1,149 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="discription" content="kazuのポートフォリオサイトです。">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>kazu-6.github.io</title>
   <link rel="shortcut icon" href="img/fav.ico">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
-  //TODO　レスポンシブデザイン  
-  <p>hello world!</p>
+<body>
+  <!--// TODO　レスポンシブデザイン  -->
+  <header>
+    <nav>
+      <ul>
+        <li class="current">
+          <a href="index.html"> 
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="favorite.html">
+            Favorite
+          </a>
+        </li>
+      </ul>
+      <p>
+        <ul>
+          <div class="index">
+          <li>
+            <a href="#profile" class="clickme">profile</a>
+          </li>
+          <li>
+            <a href="#skill" class="clickme">skill</a>
+          </li>
+          <li>
+            <a href="#history" class="clickme">history</a>
+          </li>
+          <li>
+            <a href="#work" class="clickme">works</a>
+          </li>
+          <li>
+            <a href="#contact" class="clickme">contact</a>
+          </li>
+        </div>
+        </ul>
+      </p>
+    </nav>
+  </header>
+
+  <div class="icon2">
+    <section>
+        <h2 id="profile">
+        profile
+      </h2>
+      <img src="img/icon2.png" alt="kazuのアイコン" width=200px class="icon">
+    </section>
+  </div>
+  
+
+  <p>
+    独学でプログラミングを始めました
+    <br> 趣味は読書 休日は引きこもり
+    <br> 最近運動不足気味でやばい…
+    <a href="favorite.html" class="clickme">more...</a>
+  </p>
+
+<div class="skill">
+  <section>
+    <h2 id="skill">skill</h2>
+    <p>
+      <ul>
+        <li>
+          python
+        </li>
+        <li>
+          js
+        </li>
+        <li>
+          html
+        </li>
+        <li>
+          css
+        </li>
+        <li>
+          scala
+        </li>
+      </ul>
+    </p>
+  </section>
+</div>
+
+  <div class="history">
+  <section>
+    <h2 id="history">history</h2>
+    <p>
+      <strong>
+        ずっとのほほんと生きてきて</strong>、今に至る
+      <br> 自分で作りたいものを作りたいなぁと思い、
+      <br>プログラミングを始めました。
+      </p>
+  </section>
+</div>
+
+  <div class="works">
+    <section>
+      <h2 id="work">
+        works
+      </h2>
+      <a href="https://cryptic-wave-77529.herokuapp.com/schedules/3f1f8946-3d4a-47fe-a75a-60df15572dd1" target="_blank">
+        <img src="img/予定調整くん.png" alt="予定調整君のキャプチャ画像" width="400">
+      </a>
+
+      <p>
+        <a href="https://cryptic-wave-77529.herokuapp.com/schedules/3f1f8946-3d4a-47fe-a75a-60df15572dd1" target="_blank" class="clickme">
+          予定調整くん
+        </a>
+        <p>予定を作って出欠がとれるサービスです</p>
+      </p>
+    </section>
+  </div>
+
+
+  <footer>
+    <h2 id="contact">contact</h2>
+    <ul>
+      <li>
+        <a href="mailto:pinkspider.6@gmail.com" target="_blank">
+          <img src="img/mail.png" alt="mailのアイコン">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/kazuhikonarita6" target="_blank">
+          <img src="img/facebook.png" alt="facebookのアイコン">
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/kazu-6" target="_blank">
+          <img src="img/github.png" alt="githubのマーク">
+        </a>
+      </li>
+    </ul>
+    <p>(c) kazu </p>
+  </footer>
 </body>
+
 </html>
