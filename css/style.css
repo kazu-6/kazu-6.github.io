@@ -1,125 +1,204 @@
+@charset "UTF-8";
+
+/* --------------------------------
+ * base
+ * -------------------------------- */
+html {
+  font-size: 75.5%;
+}
 body {
-  color: #333;
-  font-family: Verdana, Tahoma, sans-serif;
-  background: rgb(219, 222, 235); 
-}
-
-header {
-  text-align: right;
-  padding: 10px;
-  background-image: url('../img/DSC_0005.JPG');
-  height: 250px;
+  background: #151515 url('../images/bike_bg.JPG') no-repeat fixed left bottom;
   background-size: cover;
-  background-position: 50% 50%;
-  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: Raleway, "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+  background-position: 50% 60%;
+  
+}
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-header ul {
-  margin: 0;
-  list-style-type: none;
-  padding-left: 0;
-}
 
-header li {
+/* --------------------------------
+ * parts
+ * -------------------------------- */
+.heading {
+  position: relative;
   display: inline-block;
-  padding: 4px 8px;
-  font-size: 20px;
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
 }
-
-header li > a {
-  margin-top: 500px;
+.heading::before,
+.heading::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #999;
+}
+.heading::before {
+  bottom: 5px;
+}
+.button {
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #afa58d;
+  color: #fff;
   text-decoration: none;
-  color: inherit;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
 }
-
-.clickme {cursor: pointer;}
-header li > a:hover { color: gray;}
-header li > a:active { color: red;}
-
-
-.current {
-  border-bottom: 7px solid royalblue;
+.button:hover {
+  opacity: 0.9;
 }
-
-.index {
-  margin: 230px;  
+.button-showy {
+  background-color: #D29E04;
 }
-
-
-p, h2 { 
-  text-align: center; 
- }
-
-.icon2 { 
-   text-align: center;
-}
-
-section > h2 {
-  margin-top: 50px;
+.button-ghost {
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 
-.icon {
-  
-  margin: 10px auto 10px;
-  border-radius: 50%;
-  border-color: white;
-  border-width: 5px;
-  border-style: solid;
-  box-shadow: 0 0 5px black;  
+/* --------------------------------
+ * header
+ * -------------------------------- */
+.header {
+  padding: 170px 30px 80px;
 }
-
-.skill {
-  
-  width: 500px;
-  text-align: center; 
-  margin: 10px auto;  
-  border-bottom: 1px solid gray;
+.site-title-sub {
+  margin: 0 0 30px;
+  letter-spacing: 1px;
+  font-size: 4rem;
 }
-
-.skill ul {
-  margin: 0;
-  list-style-type: none;
-  font-size: 20px;
-}
-
-.skill li {
+.site-title-sub::before,
+.site-title-sub::after {
+  content: '';
   display: inline-block;
+  width: 140px;
+  height: 2px;
+  margin: 0 30px;
+  background-color: #fff;
+  vertical-align: middle;
+}
+.site-title {
+  margin: 50px 0 40px;
+  font-size: 7.6rem;
+}
+.site-description {
+  margin-bottom: 50px;
+  color: #888;
+  font-size: 1.6rem;
+}
+.buttons .button {
   margin: 10px;
-  list-style-type: none;
-  font-size: 30px;
-}
-
-.history {
-  width: 400px;
-  margin: 50px auto;
-  border-bottom: 1px solid gray;
 }
 
 
+/* --------------------------------
+ * about
+ * -------------------------------- */
+.about {
+  padding: 80px 30px;
+  background-color: #fff;
+  color: #333;
+}
+.about-text {
+  margin: 30px 0;
+  line-height: 2.5;
+}
+
+
+/* --------------------------------
+ * works
+ * -------------------------------- */
 .works {
-  width: 400px;
-  margin: 50px auto;
-  border-bottom: 1px solid gray;
-
+  padding: 30px 0;
+  background-color:  #333;
+}
+.works-wrapper {
+  /* display: table; */
+  /* width: 100%; */
+  /* margin-top: 0px; */
+  /* table-layout: fixed; */
+}
+.work-box {
+  position: relative;
+  /* display: table-cell; */
+}
+.work-image {
+  /* display: block; */
+  width: 50%;
+  margin: 5% 0 5%;
 }
 
-.works h2 {
-  margin-bottom: 30px;
+.work-description {
+  /* sposition: absolute; */
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+.work-text {
+  font-size: 1.2rem;
+  line-height: 2;
 }
 
-.works a,
-.works p {
-  text-align: left;
+
+/* --------------------------------
+ * skills
+ * -------------------------------- */
+.skills {
+  padding: 80px 0;
+  background-color: #fff;
+  color: #333;
+}
+.skills-wrapper {  
+  width: 80%;
+  margin: 50px auto 0;
+  text-align: center;
+}
+.skill-box {
+  display: inline-block;
+  margin: 20px;
 }
 
+.skill-title {
+  margin: 0 20px 20px;
+  font-size: 2rem;
+}
+
+
+/* --------------------------------
+ * contact
+ * -------------------------------- */
+.contact {
+  padding: 80px 0 10px;
+  clear: left;
+}
+
+.contact-icon {
+  margin: 10px;
+}
+/* --------------------------------
+ * footer
+ * -------------------------------- */
 footer {
-  width: 400px;
+  width:450px;
   margin: 0 auto 50px;
+  padding: 20px 0;
+  font-size: 1.3rem;
 }
 
 footer ul {
-  margin: 0;
+  margin: 20px;
   list-style-type: none;
   padding-left: 0;
   float: left;
@@ -139,7 +218,109 @@ footer h2 {
 
 footer p {
   margin-top: 70px;
-  color: black;
-  font-size: 16px;
+  color: white;
+  font-size: 30px;
   text-align: right;
 }
+
+
+
+
+/* --------------------------------
+ * smart phone
+ * -------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    background-image: none;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 1.3rem;
+  }
+  .heading {
+    margin-top: 20px;
+    font-size: 2.5rem;
+  }
+  .button:hover {
+    opacity: 1;
+  }
+
+  /* --- header --- */
+  .header {
+    padding-top: 60px;
+  }
+  .site-title-sub {
+    font-size: 1.7rem;
+  }
+  .site-title-sub::before,
+  .site-title-sub::after {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+  .site-title {
+    margin-top: 35px;
+    font-size: 5rem;
+  }
+
+  /* --- about --- */
+  .about-text {
+    line-height: 1.8;
+  }
+
+  /* --- works --- */
+  
+  .works-wrapper,
+  .work-box {
+    display: block;
+  }
+  .work-image {
+    display: none;
+  }
+  .work-description { 
+    position: relative;
+  }
+  
+  .work-box::after {
+    top: 0;
+    height: 100%;
+    background-size: cover;
+    transform: none; 
+  }
+  
+
+  /* --- skills --- */
+  .skills-wrapper,
+  .skill-box {
+    display: block;
+  }
+  .skill-box {
+    margin: 50px auto;
+  }
+  .skill-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 5rem;
+    line-height: 92px;
+  }
+  .skill-text {
+    margin: 0;
+  }
+
+  /* --- contact --- */
+  .contact {
+    padding-bottom: 80px;
+  }
+  .contact-form {
+    width: 80%;
+  }
+}
+
+.clickme {
+  cursor: pointer;
+  font-size: 3.0rem;
+  color: white;
+  }
+ 
+
